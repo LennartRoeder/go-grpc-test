@@ -1,2 +1,10 @@
-package: go-grpc-test
-import: []
+package: github.com/thinking-aloud/go-grpc-test
+import:
+- package: github.com/golang/protobuf
+  subpackages:
+  - proto
+- package: golang.org/x/net
+  subpackages:
+  - context
+- package: google.golang.org/grpc
+  version: ~1.2.0
